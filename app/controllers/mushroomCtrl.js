@@ -14,10 +14,12 @@ app.controller("mushroomCtrl", function($scope, $location, ItemStorage) {
 			shroomObj.name = Object.keys(mushroom)[0];
 			shroomObj.edible = mushroom[Object.keys(mushroom)[0]].edible;
 			shroomObj.description = mushroom[Object.keys(mushroom)[0]].description;
+
 			return shroomObj;
 		});
 
 		$scope.mushrooms = Shrooms;
+		console.log($scope.mushrooms);
 		$scope.$apply();
 	});
 

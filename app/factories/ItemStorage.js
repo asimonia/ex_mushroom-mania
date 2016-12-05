@@ -1,5 +1,11 @@
 "use strict";
 
+// Provider is the umbrella term
+// Factory export an object
+// Service export is an object you instantiate
+// Values, Constants
+// Controller is the domain, business logic
+
 app.factory("ItemStorage", ($http) => {
 
 	let getShrooms = () => {
