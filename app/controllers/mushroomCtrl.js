@@ -3,7 +3,7 @@
 app.controller("mushroomCtrl", function($scope, $location, ItemStorage) {
 
 	$scope.reload = function () {
-		$location.reload();
+		location.reload();
 	};
 
 	ItemStorage.getShrooms()
@@ -20,4 +20,5 @@ app.controller("mushroomCtrl", function($scope, $location, ItemStorage) {
 		$scope.mushrooms = Shrooms;
 		$scope.$apply();
 	});
+
 });
